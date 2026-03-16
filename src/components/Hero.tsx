@@ -13,7 +13,7 @@ const Hero = () => {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="inline-block mb-6 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary tracking-widest uppercase">
-          Tech Collective
+          Innovation · Security · Design
         </div>
 
         <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
@@ -21,24 +21,26 @@ const Hero = () => {
           <span className="text-foreground">Lab</span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-          Where Code, Security & Creativity Converge. We build modern digital
-          solutions that are secure, scalable, and visually stunning.
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
+          Where Code, Security & Creativity Converge.
+        </p>
+        <p className="text-base text-muted-foreground/80 max-w-xl mx-auto mb-10 leading-relaxed">
+          We are a compact team of three technology specialists who combine development, cybersecurity, and design expertise to build modern digital solutions that are secure, scalable, and visually stunning.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#portfolio"
-            className="group flex items-center gap-2 rounded-lg bg-primary px-8 py-3.5 font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="group flex items-center gap-2 rounded-lg bg-primary px-8 py-3.5 font-medium text-primary-foreground hover:bg-primary/90 transition-colors glow-cyan"
           >
-            Our Work
+            View Our Work
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#contact"
             className="flex items-center gap-2 rounded-lg border border-border bg-card/50 px-8 py-3.5 font-medium text-foreground hover:border-primary/40 hover:bg-card transition-colors"
           >
-            Get in Touch
+            Start a Project
           </a>
         </div>
       </div>

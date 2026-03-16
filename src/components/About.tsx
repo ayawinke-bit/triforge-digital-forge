@@ -2,10 +2,10 @@ import { Lightbulb, Zap, Target, Shield } from "lucide-react";
 import useScrollReveal from "@/hooks/useScrollReveal";
 
 const values = [
-  { icon: Lightbulb, label: "Innovation" },
-  { icon: Zap, label: "Performance" },
-  { icon: Target, label: "Precision" },
-  { icon: Shield, label: "Security" },
+  { icon: Lightbulb, label: "Innovation", description: "Pushing boundaries with creative solutions" },
+  { icon: Zap, label: "Performance", description: "Fast, optimized, and efficient products" },
+  { icon: Target, label: "Precision", description: "Pixel-perfect execution every time" },
+  { icon: Shield, label: "Security", description: "Protection built into every layer" },
 ];
 
 const About = () => {
@@ -26,17 +26,23 @@ const About = () => {
               Triforge Lab is a forward-thinking tech collective focused on building modern
               digital solutions for businesses and individuals. Though we are a compact team
               of three, we combine strong expertise in software development, cybersecurity,
-              and creative design to deliver high-quality products.
+              and creative design to deliver high-quality products that are secure, scalable,
+              and visually impressive.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               Our mission is to help businesses transform their ideas into reliable digital
               products through innovation, collaboration, and technical excellence.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Founded on the belief that great technology comes from diverse expertise, 
+              we bring together three unique perspectives — code, security, and creativity — 
+              to forge digital solutions that stand out in today's competitive landscape.
             </p>
           </div>
 
           {/* Values grid */}
           <div className="reveal grid grid-cols-2 gap-4">
-            {values.map(({ icon: Icon, label }) => (
+            {values.map(({ icon: Icon, label, description }) => (
               <div
                 key={label}
                 className="glass rounded-xl p-6 text-center hover:border-primary/30 transition-colors group"
@@ -44,7 +50,8 @@ const About = () => {
                 <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
                   <Icon size={24} />
                 </div>
-                <p className="font-heading font-semibold text-foreground">{label}</p>
+                <p className="font-heading font-semibold text-foreground mb-1">{label}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed">{description}</p>
               </div>
             ))}
           </div>
