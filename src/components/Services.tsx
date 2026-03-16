@@ -1,0 +1,78 @@
+import { Globe, Layers, ShieldCheck, Figma, PenTool, RefreshCw } from "lucide-react";
+import useScrollReveal from "@/hooks/useScrollReveal";
+
+const services = [
+  {
+    icon: Globe,
+    title: "Web Development",
+    description: "Custom websites and web applications built using modern technologies.",
+    span: "md:col-span-2",
+  },
+  {
+    icon: Layers,
+    title: "Full Stack Apps",
+    description: "End-to-end development from user interface to backend systems and databases.",
+    span: "",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Cybersecurity",
+    description: "Security audits, penetration testing, vulnerability assessment, and digital protection.",
+    span: "",
+  },
+  {
+    icon: Figma,
+    title: "UI/UX Design",
+    description: "Creating intuitive, user-friendly, and visually appealing digital interfaces.",
+    span: "md:col-span-2",
+  },
+  {
+    icon: PenTool,
+    title: "Graphic Design & Branding",
+    description: "Logos, brand identity, digital graphics, and creative assets for businesses.",
+    span: "md:col-span-2",
+  },
+  {
+    icon: RefreshCw,
+    title: "Website Redesign",
+    description: "Improving outdated websites with modern design, performance, and security.",
+    span: "",
+  },
+];
+
+const Services = () => {
+  const ref = useScrollReveal();
+
+  return (
+    <section id="services" className="py-24 md:py-32" ref={ref}>
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16 reveal">
+          <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">What We Do</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
+            Our <span className="text-gradient">Services</span>
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-4">
+          {services.map((service) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={service.title}
+                className={`reveal glass rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 group ${service.span}`}
+              >
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
+                  <Icon size={24} />
+                </div>
+                <h3 className="font-heading text-lg font-bold text-foreground mb-2">{service.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
