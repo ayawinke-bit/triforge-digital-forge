@@ -5,37 +5,37 @@ const services = [
   {
     icon: Globe,
     title: "Web Development",
-    description: "Custom websites and web applications built using modern technologies.",
+    description: "Custom websites and web applications built with React, Next.js, and modern technologies. From landing pages to complex platforms, we craft fast, responsive, and SEO-optimized digital experiences.",
     span: "md:col-span-2",
   },
   {
     icon: Layers,
     title: "Full Stack Apps",
-    description: "End-to-end development from user interface to backend systems and databases.",
+    description: "End-to-end development from beautiful user interfaces to powerful backend systems, APIs, and databases. We build scalable applications that grow with your business.",
     span: "",
   },
   {
     icon: ShieldCheck,
     title: "Cybersecurity",
-    description: "Security audits, penetration testing, vulnerability assessment, and digital protection.",
+    description: "Comprehensive security audits, penetration testing, vulnerability assessments, and system hardening. We protect your digital assets from evolving cyber threats.",
     span: "",
   },
   {
     icon: Figma,
     title: "UI/UX Design",
-    description: "Creating intuitive, user-friendly, and visually appealing digital interfaces.",
+    description: "Creating intuitive, user-friendly, and visually appealing digital interfaces. We conduct user research, wireframing, and prototyping to deliver experiences users love.",
     span: "md:col-span-2",
   },
   {
     icon: PenTool,
     title: "Graphic Design & Branding",
-    description: "Logos, brand identity, digital graphics, and creative assets for businesses.",
+    description: "Professional logos, brand identity systems, digital graphics, and creative assets that make your business memorable and visually consistent across all touchpoints.",
     span: "md:col-span-2",
   },
   {
     icon: RefreshCw,
     title: "Website Redesign",
-    description: "Improving outdated websites with modern design, performance, and security.",
+    description: "Transform outdated websites into modern, high-performing platforms with improved design, faster load times, better security, and enhanced user experience.",
     span: "",
   },
 ];
@@ -51,6 +51,9 @@ const Services = () => {
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
             Our <span className="text-gradient">Services</span>
           </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">
+            We offer a comprehensive range of digital services designed to help your business thrive in the modern digital landscape.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-4">
