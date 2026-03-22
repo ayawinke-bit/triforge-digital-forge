@@ -23,13 +23,13 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass" : "bg-transparent"
+        scrolled ? "glass-panel" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-3">
           <img src={logo} alt="Triforge Lab" className="h-10 w-10 rounded-lg object-cover" />
-          <span className="font-heading text-xl font-bold text-gradient">Triforge Lab</span>
+          <span className="font-heading text-xl font-bold text-gradient">TriForge Lab</span>
         </a>
 
         {/* Desktop links */}
@@ -62,7 +62,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden glass border-t border-border px-6 py-4 space-y-4">
+        <div className="md:hidden glass-panel border-t border-border px-6 py-4 space-y-4">
           {navLinks.map((link) => (
             <a
               key={link.href}

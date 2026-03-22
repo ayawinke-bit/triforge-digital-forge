@@ -9,15 +9,15 @@ const Hero = () => {
       {/* Glow orbs */}
       <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-primary/5 blur-[100px] animate-float" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-secondary/5 blur-[120px] animate-float-delayed" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/3 blur-[200px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[250px]" />
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-1000">
         <div className="inline-block mb-6 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary tracking-widest uppercase">
           Innovation · Security · Design
         </div>
 
         <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
-          <span className="text-gradient">Triforge</span>{" "}
+          <span className="text-gradient">TriForge</span>{" "}
           <span className="text-foreground">Lab</span>
         </h1>
 
@@ -31,14 +31,14 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#portfolio"
-            className="group flex items-center gap-2 rounded-lg bg-primary px-8 py-3.5 font-medium text-primary-foreground hover:bg-primary/90 transition-colors glow-cyan"
+            className="group flex items-center gap-2 rounded-lg bg-primary px-8 py-3.5 font-medium text-primary-foreground hover:bg-primary/90 transition-all glow-cyan hover-lift"
           >
             View Our Work
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#contact"
-            className="flex items-center gap-2 rounded-lg border border-border bg-card/50 px-8 py-3.5 font-medium text-foreground hover:border-primary/40 hover:bg-card transition-colors"
+            className="flex items-center gap-2 rounded-lg border border-border bg-card/50 px-8 py-3.5 font-medium text-foreground hover:border-primary/40 hover:bg-card transition-all hover-lift"
           >
             Start a Project
           </a>

@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# TriForge Lab
 
-## Project info
+**TriForge Lab** is a forward-thinking tech collective delivering modern web development, cybersecurity, and creative design solutions for businesses and startups. This repository contains the source code for our primary portfolio website, showcasing our capabilities and custom design aesthetics.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Table of Contents
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
+- [License](#license)
 
-## How can I edit this code?
+## Tech Stack
+This modern web application is built utilizing industry-standard technologies to ensure high performance, maintainability, and a premium user experience:
 
-There are several ways of editing your application.
+- **Framework**: [React 18](https://reactjs.org/) with [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) with premium glassmorphic UI treatments
+- **Components**: [shadcn/ui](https://ui.shadcn.com/) for accessible, customizable components
+- **Routing**: [React Router](https://reactrouter.com/) for client-side navigation
+- **Animations**: CSS keyframes & dynamic transitions
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-**Use Lovable**
+## Project Structure
+The source code is organized clearly in `src`:
+- `/components` - Modular UI components (Hero, Navbar, Services, Portfolio)
+- `/pages` - Top-level page components (Index, NotFound)
+- `/hooks` - Custom React hooks for shared logic
+- `/lib` - Utilities and library configurations
+- `/assets` - Static media files
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
+- Node.js (version 18+ recommended)
+- npm or yarn
 
-**Use your preferred IDE**
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd triforge-digital-forge
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Development
+To run the local development server:
+```bash
 npm run dev
 ```
+Open [http://localhost:8080](http://localhost:8080) (or the port specified by Vite) to view it in your browser.
 
-**Edit a file directly in GitHub**
+## Scripts
+- `npm run dev` - Starts the Vite development server
+- `npm run build` - Builds the app for production to the `dist` folder
+- `npm run preview` - Locally previews the production build
+- `npm run lint` - Runs ESLint to identify code issues
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Contact
+For inquiries or potential partnerships, please reach out via [our website](https://example.com) or start a project through the contact form on our portfolio.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+*Designed and engineered by TriForge Lab.*

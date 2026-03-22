@@ -25,7 +25,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src={logo} alt="Triforge Lab" className="h-10 w-10 rounded-lg object-cover" />
-              <span className="font-heading text-xl font-bold text-gradient">Triforge Lab</span>
+              <span className="font-heading text-xl font-bold text-gradient">TriForge Lab</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               A forward-thinking tech collective building modern digital solutions through innovation, security, and creative design.
@@ -36,7 +36,7 @@ const Footer = () => {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card/50 text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card/50 text-muted-foreground hover:text-primary hover:border-primary/40 transition-all hover-lift"
                 >
                   <Icon size={18} />
                 </a>
@@ -73,10 +73,10 @@ const Footer = () => {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Triforge Lab. All rights reserved.
+            © {new Date().getFullYear()} TriForge Lab. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground/60">
-            Crafted with passion by Triforge Lab
+            Crafted with passion by TriForge Lab
           </p>
         </div>
       </div>

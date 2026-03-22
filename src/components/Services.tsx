@@ -62,7 +62,7 @@ const Services = () => {
             return (
               <div
                 key={service.title}
-                className={`reveal glass rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 group ${service.span}`}
+                className={`reveal glass-panel rounded-2xl p-8 hover:border-primary/50 transition-all duration-500 group hover-lift ${service.span}`}
               >
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
                   <Icon size={24} />

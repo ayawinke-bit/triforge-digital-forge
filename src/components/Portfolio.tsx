@@ -56,7 +56,7 @@ const Portfolio = () => {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="reveal glass rounded-2xl overflow-hidden group hover:border-primary/40 transition-all duration-500 hover:scale-[1.02] flex flex-col"
+              className="reveal glass-panel rounded-2xl overflow-hidden group hover:border-primary/50 transition-all duration-500 hover-lift flex flex-col"
             >
               {/* Image area with icon */}
               <div className={`${project.image} h-48 bg-gradient-to-br flex items-center justify-center relative overflow-hidden flex-shrink-0`}>
