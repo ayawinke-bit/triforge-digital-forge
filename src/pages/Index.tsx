@@ -9,6 +9,8 @@ import Portfolio from "@/components/Portfolio";
 import TechStack from "@/components/TechStack";
 import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import FAQ from "@/components/FAQ";
+import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -26,6 +28,8 @@ const Index = () => {
       <TechStack />
       <Testimonials />
       <WhyChooseUs />
+      <FAQ />
+      <CTA />
       <Contact />
       <Footer />
     </div>
