@@ -69,9 +69,6 @@ const Team = () => {
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                     />
                   </div>
-                  <div className={`absolute -bottom-2 -right-2 flex h-10 w-10 items-center justify-center rounded-xl ${member.iconBg} z-20 border border-background shadow-lg`}>
-                    <Icon size={20} />
-                  </div>
                 </div>
                 <h3 className="font-heading text-xl font-bold text-foreground mb-1">{member.name}</h3>
                 <p className="text-sm font-medium text-primary mb-4">{member.role}</p>
