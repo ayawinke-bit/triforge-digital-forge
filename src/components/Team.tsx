@@ -1,10 +1,14 @@
 import { Code, Shield, Palette } from "lucide-react";
 import useScrollReveal from "@/hooks/useScrollReveal";
+import bonnkeImg from "@/assets/bonnke.jpg";
+import stephenImg from "@/assets/Stephen.jpeg";
+import saeedImg from "@/assets/Saeed.jpeg";
 
 const team = [
   {
     name: "Reinhard Bonnke",
     role: "Full Stack Developer",
+    image: bonnkeImg,
     description:
       "Specializes in designing and developing modern web applications from front-end interfaces to powerful backend systems. Experienced in building scalable platforms, APIs, and full digital products.",
     icon: Code,
@@ -15,6 +19,7 @@ const team = [
   {
     name: "Stephen Maina",
     role: "Cybersecurity Specialist",
+    image: stephenImg,
     description:
       "Responsible for protecting systems, networks, and applications from cyber threats. Focuses on security audits, vulnerability testing, system hardening, and ensuring product safety.",
     icon: Shield,
@@ -23,8 +28,9 @@ const team = [
     iconBg: "bg-primary/10 text-primary",
   },
   {
-    name: "Eddy",
+    name: "Saeed",
     role: "Graphic Designer",
+    image: saeedImg,
     description:
       "The creative mind behind the visual identity of projects. Specializes in branding, UI/UX design, digital graphics, and crafting visually engaging user experiences.",
     icon: Palette,
@@ -53,10 +59,19 @@ const Team = () => {
             return (
               <div
                 key={member.name}
-                className={`reveal glass rounded-2xl p-8 border ${member.borderColor} ${member.glowClass} transition-all duration-500 hover:scale-[1.03]`}
+                className={`reveal glass rounded-2xl p-8 border ${member.borderColor} ${member.glowClass} transition-all duration-500 hover:scale-[1.03] flex flex-col items-center text-center`}
               >
-                <div className={`mb-5 flex h-14 w-14 items-center justify-center rounded-xl ${member.iconBg}`}>
-                  <Icon size={28} />
+                <div className="relative mb-6">
+                  <div className={`h-24 w-24 rounded-full overflow-hidden border-2 ${member.borderColor} relative z-10`}>
+                    <img 
+                      src={member.image} 
+                      alt={member.name} 
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <div className={`absolute -bottom-2 -right-2 flex h-10 w-10 items-center justify-center rounded-xl ${member.iconBg} z-20 border border-background shadow-lg`}>
+                    <Icon size={20} />
+                  </div>
                 </div>
                 <h3 className="font-heading text-xl font-bold text-foreground mb-1">{member.name}</h3>
                 <p className="text-sm font-medium text-primary mb-4">{member.role}</p>

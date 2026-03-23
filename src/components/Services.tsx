@@ -1,4 +1,4 @@
-import { Globe, Layers, ShieldCheck, Figma, PenTool, RefreshCw } from "lucide-react";
+import { Globe, Layers, ShieldCheck, Figma, PenTool, RefreshCw, Video, Image as ImageIcon } from "lucide-react";
 import useScrollReveal from "@/hooks/useScrollReveal";
 
 const services = [
@@ -36,6 +36,24 @@ const services = [
     icon: RefreshCw,
     title: "Website Redesign",
     description: "Transform outdated websites into modern, high-performing platforms with improved design, faster load times, better security, and enhanced user experience.",
+    span: "",
+  },
+  {
+    icon: Video,
+    title: "Video Editing",
+    description: "Professional video editing, motion graphics, and post-production services to create engaging visual content for your brand.",
+    span: "",
+  },
+  {
+    icon: ImageIcon,
+    title: "Photoshop & Retouching",
+    description: "Advanced image manipulation, professional photo retouching, and precise digital compositing using Adobe Photoshop.",
+    span: "",
+  },
+  {
+    icon: PenTool,
+    title: "Illustrator & Vector Art",
+    description: "Custom vector graphics, scalable logos, and detailed digital illustration work using Adobe Illustrator.",
     span: "",
   },
 ];

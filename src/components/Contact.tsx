@@ -185,7 +185,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-heading font-semibold text-foreground">Email Us</p>
-                  <p className="text-sm text-muted-foreground">hello@triforgelab.com</p>
+                  <p className="text-sm text-muted-foreground">triforgedigital@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 mb-6">
@@ -194,7 +194,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-heading font-semibold text-foreground">Call Us</p>
-                  <p className="text-sm text-muted-foreground">Available on request</p>
+                  <p className="text-sm text-muted-foreground">+254 715 564 296</p>
+                  <p className="text-sm text-muted-foreground">+254 745 617 108</p>
+                  <p className="text-sm text-muted-foreground">+254 742 268 882</p>
                 </div>
               </div>
               <div className="flex items-start gap-4 mb-6">

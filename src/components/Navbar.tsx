@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 import logo from "@/assets/triforge-logo.jpeg";
 
 const navLinks = [
@@ -28,7 +29,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-3">
-          <img src={logo} alt="Triforge Lab" className="h-10 w-10 rounded-lg object-cover" />
+          <img src={logo} alt="TriForge Lab" className="h-10 w-10 rounded-lg object-cover" />
           <span className="font-heading text-xl font-bold text-gradient">TriForge Lab</span>
         </a>
 
@@ -43,6 +44,7 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <ThemeToggle />
           <a
             href="#contact"
             className="rounded-lg bg-primary/10 px-5 py-2 text-sm font-medium text-primary border border-primary/30 hover:bg-primary/20 transition-colors glow-cyan"
@@ -52,12 +54,15 @@ const Navbar = () => {
         </div>
 
         {/* Mobile toggle */}
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setMobileOpen(!mobileOpen)}
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle />
+          <button
+            className="text-foreground"
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
